@@ -1,0 +1,27 @@
+body {
+    width: 90%;
+}
+
+#cim {
+    text-align: center;
+}
+
+table {
+    background-color: #3A3;
+    border: solid 1px green;
+    border-radius: 8px;
+}
+
+th {
+    background-color: rgb(53, 196, 34);
+}
+
+table tr td {
+    width: 24px;
+    text-align: right;
+    padding-right: 4px;
+    line-height: 20px;
+    border-radius: 8px;
+    background-color: #CFC;
+}
+
