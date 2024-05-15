@@ -1,5 +1,7 @@
-var rows = 50;  //bekérős legyen
-var cols = 75;
+
+var rows = 50; //bekérős legyen
+var cols = 50;
+
 
 var playing = false;
 
@@ -11,8 +13,10 @@ var reproductionTime = 100;
 
 
 
-    let rows = document.getElementById("sor").value;
-    let cols = document.getElementById("sor").value;
+
+/*let rows = document.getElementById("sor").value;
+let cols = document.getElementById("oszlop").value;*/
+
 
     
 
@@ -190,11 +194,6 @@ function computeNextGen() {
     updateView();
 }
 
-// RULES
-// Any live cell with fewer than two live neighbours dies, as if caused by under-population.
-// Any live cell with two or three live neighbours lives on to the next generation.
-// Any live cell with more than three live neighbours dies, as if by overcrowding.
-// Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
 
 function applyRules(row, col) {
     var numNeighbors = countNeighbors(row, col);

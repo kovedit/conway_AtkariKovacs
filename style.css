@@ -9,7 +9,9 @@ body {
 
 h1{
     padding: 20px;
-    margin-left: 750px;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
     color: #a15d76;
 
 }
@@ -24,8 +26,7 @@ table {
 }
 
 td {
-    border: 1px solid #fdcedf;/**/
-    border-radius: 1px;
+    border: 1px solid #fdcedf;
     width: 10px;
     height: 10px;  
 }
@@ -59,7 +60,9 @@ td.dead {
 }*/
 
 .controls{
-    margin-left: 850px;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #start:hover,
