@@ -1,5 +1,7 @@
-var rows = 50; 
+
+var rows = 50; //bekérős legyen
 var cols = 50;
+
 
 var playing = false;
 
@@ -11,13 +13,12 @@ var reproductionTime = 100;
 
 
 
+
 /*let rows = document.getElementById("sor").value;
 let cols = document.getElementById("oszlop").value;*/
 
 
-
-
-
+    
 
 function initializeGrids() {
     for (var i = 0; i < rows; i++) {
@@ -67,7 +68,8 @@ function createTable() {
             var cell = document.createElement("td");
             cell.setAttribute("id", i + "_" + j);
             cell.setAttribute("class", "dead");
-            cell.onclick = cellClickHandler;
+            //klikk + amíg tartja szinez
+            cell.onmouseover = cellClickHandler;
             tr.appendChild(cell);
         }
         table.appendChild(tr);
@@ -153,7 +155,7 @@ function clearButtonHandler() {
     for (var i = 0; i < cells.length; i++) {
         cells[i].setAttribute("class", "dead");
     }
-    resetGrids;
+    resetGrids();
 }
 
 // start/pause/continue the game
@@ -170,6 +172,7 @@ function startButtonHandler() {
         play();
     }
 }
+
 
 // run the life game
 function play() {
