@@ -173,6 +173,7 @@ function startButtonHandler() {
     }
 }
 
+
 // run the life game
 function play() {
     computeNextGen();
