@@ -1,5 +1,5 @@
-/*var rows = 50; 
-var cols = 50;*/
+var rows = 50;  //bekérős legyen
+var cols = 75;
 
 var playing = false;
 
@@ -11,34 +11,10 @@ var reproductionTime = 100;
 
 
 
-
-function funkcio(){
     let rows = document.getElementById("sor").value;
-    let cols = document.getElementById("oszlop").value;
+    let cols = document.getElementById("sor").value;
 
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
 
 function initializeGrids() {
     for (var i = 0; i < rows; i++) {
