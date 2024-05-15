@@ -53,11 +53,25 @@ td.dead {
     background-color: transparent;
 }
 
-td.live {
+/*td.live {
     background-color: #f2bed1 ;
     border-radius: 1px;
-}
+}*/
 
 .controls{
     margin-left: 850px;
 }
+
+#start:hover,
+#clear:hover,
+#random:hover {
+    cursor: pointer;
+}
+
+
+td.live {
+    --c: #f2bed1;
+    aspect-ratio: 1;
+    border-image: radial-gradient(var(--c) 69%,#0000 70%) 84.5%/50%;
+    clip-path: polygon(-42% 0,50% 91%, 142% 0);
+  }

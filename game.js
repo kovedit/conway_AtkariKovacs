@@ -1,5 +1,5 @@
-var rows = 50;  //bekérős legyen
-var cols = 50;
+/*var rows = 50; 
+var cols = 50;*/
 
 var playing = false;
 
@@ -8,6 +8,37 @@ var nextGrid = new Array(rows);
 
 var timer;
 var reproductionTime = 100;
+
+
+
+
+function funkcio(){
+    let rows = document.getElementById("sor").value;
+    let cols = document.getElementById("oszlop").value;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function initializeGrids() {
     for (var i = 0; i < rows; i++) {
