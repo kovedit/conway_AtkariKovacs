@@ -68,7 +68,8 @@ function createTable() {
             var cell = document.createElement("td");
             cell.setAttribute("id", i + "_" + j);
             cell.setAttribute("class", "dead");
-            cell.onclick = cellClickHandler;
+            //klikk + amíg tartja szinez
+            cell.onmouseover = cellClickHandler;
             tr.appendChild(cell);
         }
         table.appendChild(tr);
@@ -154,7 +155,7 @@ function clearButtonHandler() {
     for (var i = 0; i < cells.length; i++) {
         cells[i].setAttribute("class", "dead");
     }
-    resetGrids;
+    resetGrids();
 }
 
 // start/pause/continue the game
