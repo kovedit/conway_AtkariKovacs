@@ -153,7 +153,7 @@ function clearButtonHandler() {
     for (var i = 0; i < cells.length; i++) {
         cells[i].setAttribute("class", "dead");
     }
-    resetGrids;
+    resetGrids();
 }
 
 // start/pause/continue the game
@@ -240,5 +240,15 @@ function countNeighbors(row, col) {
     return count;
 }
 
+
+
+
+
+
+
+
 // Start everything
 window.onload = initialize;
+
+
+
