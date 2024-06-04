@@ -65,7 +65,7 @@ function createTable() {
             cell.setAttribute("id", i + "_" + j);
             cell.setAttribute("class", "dead");
             //klikk + amíg tartja szinez
-            cell.onmouseover = cellClickHandler;
+            cell.onclick = cellClickHandler;
             tr.appendChild(cell);
         }
         table.appendChild(tr);
@@ -238,10 +238,6 @@ function countNeighbors(row, col) {
     }
     return count;
 }
-
-
-
-
 
 
 
