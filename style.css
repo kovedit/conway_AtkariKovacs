@@ -5,16 +5,14 @@
 body {
     padding: 20px;
     background-color: #f8e8ee;
-
     font-family: "Codec cold",sans-serif;
-
-    background-image: url(sziv.png);
+    background-image: radial-gradient(white 7%, transparent 7%), radial-gradient(white 4%, transparent 4%);
     background-size: 100px 100px, 100px 100px;
     background-position: 0 0, 50px 50px;
-    animation: havazas 60s linear infinite;
+    animation: szivezes 60s linear infinite;
 }
 
-@keyframes havazas {
+@keyframes szivezes {
     0%{
         background-position: 0px 0px, 50px 50px;
     }
