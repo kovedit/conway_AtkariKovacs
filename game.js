@@ -1,5 +1,5 @@
 
-var rows = 50; //bekérős legyen
+var rows = 50; 
 var cols = 50;
 
 
@@ -12,10 +12,6 @@ var timer;
 var reproductionTime = 100;
 
 
-
-
-/*let rows = document.getElementById("sor").value;
-let cols = document.getElementById("oszlop").value;*/
 
 
     
