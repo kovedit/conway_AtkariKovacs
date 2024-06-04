@@ -9,12 +9,24 @@ var grid = new Array(rows);
 var nextGrid = new Array(rows);
 
 var timer;
-var reproductionTime = 100;
+var reproductionTime = 170;
 
 
 
 
-    
+function Time1(){
+    reproductionTime = 450
+}
+
+function Time2(){
+    reproductionTime = 170
+}
+
+function Time3(){
+    reproductionTime = 85
+}
+
+
 
 function initializeGrids() {
     for (var i = 0; i < rows; i++) {
