@@ -5,7 +5,23 @@
 body {
     padding: 20px;
     background-color: #f8e8ee;
+
     font-family: "Codec cold",sans-serif;
+
+    background-image: url(sziv.png);
+    background-size: 100px 100px, 100px 100px;
+    background-position: 0 0, 50px 50px;
+    animation: havazas 60s linear infinite;
+}
+
+@keyframes havazas {
+    0%{
+        background-position: 0px 0px, 50px 50px;
+    }
+    100%{
+        background-position: 300px 1500px, 350px 1550px;
+    }
+
 }
 
 h1{
